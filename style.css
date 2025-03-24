@@ -1,32 +1,80 @@
-* {
-    margin: 0;
+/* style.css */
+
+body {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body {
-    background: #006600;
-    font-size: 12px;
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-    flex: 0 1 700px;
-    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.heading {
+    color: #318C46;
+}
+
+.headings-container {
+    text-align: center;
+    color: #000;
+}
+
+.form-controls {
     padding: 10px;
+    border-radius: 5px;
+    border: none;
 }
 
-.screen-body-item {
-    flex: 1;
-    padding: 50px;
+.form-input:focus {
+    outline: none;
 }
 
-input {
-    margin: 10px 10px 10px;
+.image-generate-btn {
+    background-color: #318C46;
+    cursor: pointer;
+    color: #fff;
 }
 
-.showdata {
-    color: black;
-    font-size: 1.2rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
+#imageContainerText {
+    color: #000;
 }
+
+.image-container {
+    margin: 50px 0;
+    display: none;
+    text-align: center;
+}
+
+.my-generated-image {
+    width: 100%;
+    height: 350px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+    .container {
+        width: 100%;
+    }
+
+    .my-generated-image {
+        width: 100%;
+        height: 300px;
+    }
+}
+
